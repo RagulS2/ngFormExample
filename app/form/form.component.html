@@ -1,0 +1,129 @@
+<p>form:</p>
+
+<!-- <form  #myform="ngForm">
+    
+    <div class="form-group">
+        <label >Name</label>
+        <input type="text" [ngModel]="data.name" name="fname" class="form-control">
+    </div>
+    <div class="form-group">
+    <label >age</label>
+    <input type="number" [ngModel]="data.age" name="age" class="form-control">
+    </div>
+    <div class="form-group">
+        <label >Degree</label>
+        <input type="text" [ngModel]="data.degree"  name="degree" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label >Gender</label>
+        <select [ngModel]="data.gender" name="gender" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label>Designation:</label>
+            <div class="radio-group">
+              <label>   
+                <input type="radio"  name="designation" value="developing" [ngModel]="data.designation    ">
+                Developing
+              </label>
+              <label>
+                <input type="radio"  name="designation" value="design" [ngModel]="data.designation ">
+                Design
+              </label>
+              <label>
+                <input type="radio"   name="designation" value="finance" [ngModel]="data.designation ">
+               Finance
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Skills</label>
+            <div class="checkbox-group">
+              <label>
+                <input type="checkbox" class="form-control" name="skill" value="java" [ngModel]="data.skill1">
+                Java
+              </label>
+              <label>
+                <input type="checkbox" class="form-control" name="skill1" value="python" [ngModel]="data.skill2">
+                Python
+              </label>
+              <label>
+                <input type="checkbox" class="form-control" name="skill2" value="js" [ngModel]="data.skill3">
+                Js
+              </label>
+            </div>
+          </div> 
+          
+          
+        <button (click)="fun(myform.value)">Submit</button>
+</form> -->
+
+<form  #myform="ngForm">
+    
+  <div class="form-group">
+      <label >Name</label>
+      <input type="text" [ngModel]="data.name" name="fname" class="form-control">
+  </div>
+  <div class="form-group">
+  <label >age</label>
+  <input type="number" [ngModel]="data.age" name="age" class="form-control">
+  </div>
+  <div class="form-group">
+      <label >Degree</label>
+      <input type="text" [ngModel]="data.degree"  name="degree" class="form-control">
+      </div>
+
+      <div class="form-group">
+          <label >Gender</label>
+      <select [ngModel]="data.gender" name="gender" class="form-control">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="others">Others</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+          <label>Designation:</label>
+          <div class="radio-group">
+            <label>   
+              <input type="radio"  name="designation" value="developing" [ngModel]="data.designation    ">
+              Developing
+            </label>
+            <label>
+              <input type="radio"  name="designation" value="design" [ngModel]="data.designation ">
+              Design
+            </label>
+            <label>
+              <input type="radio"   name="designation" value="finance" [ngModel]="data.designation ">
+             Finance
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Skills</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" class="form-control" name="skill" value="java" [ngModel]="data.skill1">
+              Java
+            </label>
+            <label>
+              <input type="checkbox" class="form-control" name="skill1" value="python" [ngModel]="data.skill2">
+              Python
+            </label>
+            <label>
+              <input type="checkbox" class="form-control" name="skill2" value="js" [ngModel]="data.skill3">
+              Js
+            </label>
+          </div>
+        </div> 
+        
+        
+      <button (click)="fun(myform.value)">Submit</button>
+</form>
+{{myform.value|json}}
+{{data |json}}
